@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "81f0052a-afd6-428d-8cb5-6b9af402475c": {
+      "ProjectGuid": "81f0052a-afd6-428d-8cb5-6b9af402475c",
+      "DisplayName": "AlmEditor",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

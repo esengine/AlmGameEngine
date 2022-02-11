@@ -1,0 +1,3 @@
+[submodule "Alm/Dependices/megasource"]
+	path = Alm/Dependices/megasource
+	url = https://github.com/esengine/megasource.git
