@@ -5,6 +5,25 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <BaseOutputPath>F:\AlmGameEngine\Alm\Release</BaseOutputPath>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<UseWindowsForms>False</UseWindowsForms>
+	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<StartupObject>Alm.App</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Libs\native_lib_win_x64.zip" />
+    <None Remove="Libs\native_lib_win_x86.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Libs\native_lib_win_x64.zip">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libs\native_lib_win_x86.zip">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
 
 </Project>

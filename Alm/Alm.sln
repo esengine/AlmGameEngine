@@ -3,7 +3,34 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlmEditor", "AlmEditor.csproj", "{81F0052A-AFD6-428D-8CB5-6B9AF402475C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlmEditor", "AlmEditor\AlmEditor.csproj", "{4FC562E0-4A6A-480D-8183-E0BA543624FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "love", "love", "{F9BEB2C4-9F12-4DBF-A8F0-1E312E339F08}"
+	ProjectSection(SolutionItems) = preProject
+		Dependices\megasource\build\love\Release\liblove.exp = Dependices\megasource\build\love\Release\liblove.exp
+		Dependices\megasource\build\love\Release\liblove.lib = Dependices\megasource\build\love\Release\liblove.lib
+		Dependices\megasource\build\love\Release\love.dll = Dependices\megasource\build\love\Release\love.dll
+		Dependices\megasource\build\love\Release\love.exe = Dependices\megasource\build\love\Release\love.exe
+		Dependices\megasource\build\love\Release\love.exp = Dependices\megasource\build\love\Release\love.exp
+		Dependices\megasource\build\love\Release\love.lib = Dependices\megasource\build\love\Release\love.lib
+		Dependices\megasource\build\love\Release\love_3p_box2d.lib = Dependices\megasource\build\love\Release\love_3p_box2d.lib
+		Dependices\megasource\build\love\Release\love_3p_ddsparse.lib = Dependices\megasource\build\love\Release\love_3p_ddsparse.lib
+		Dependices\megasource\build\love\Release\love_3p_enet.lib = Dependices\megasource\build\love\Release\love_3p_enet.lib
+		Dependices\megasource\build\love\Release\love_3p_glad.lib = Dependices\megasource\build\love\Release\love_3p_glad.lib
+		Dependices\megasource\build\love\Release\love_3p_glslang.lib = Dependices\megasource\build\love\Release\love_3p_glslang.lib
+		Dependices\megasource\build\love\Release\love_3p_lodepng.lib = Dependices\megasource\build\love\Release\love_3p_lodepng.lib
+		Dependices\megasource\build\love\Release\love_3p_lua53.lib = Dependices\megasource\build\love\Release\love_3p_lua53.lib
+		Dependices\megasource\build\love\Release\love_3p_luasocket.lib = Dependices\megasource\build\love\Release\love_3p_luasocket.lib
+		Dependices\megasource\build\love\Release\love_3p_lz4.lib = Dependices\megasource\build\love\Release\love_3p_lz4.lib
+		Dependices\megasource\build\love\Release\love_3p_noise1234.lib = Dependices\megasource\build\love\Release\love_3p_noise1234.lib
+		Dependices\megasource\build\love\Release\love_3p_physfs.lib = Dependices\megasource\build\love\Release\love_3p_physfs.lib
+		Dependices\megasource\build\love\Release\love_3p_wuff.lib = Dependices\megasource\build\love\Release\love_3p_wuff.lib
+		Dependices\megasource\build\love\Release\love_3p_xxhash.lib = Dependices\megasource\build\love\Release\love_3p_xxhash.lib
+		Dependices\megasource\build\love\Release\lua51.dll = Dependices\megasource\build\love\Release\lua51.dll
+		Dependices\megasource\build\love\Release\mpg123.dll = Dependices\megasource\build\love\Release\mpg123.dll
+		Dependices\megasource\build\love\Release\OpenAL32.dll = Dependices\megasource\build\love\Release\OpenAL32.dll
+		Dependices\megasource\build\love\Release\SDL2.dll = Dependices\megasource\build\love\Release\SDL2.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +38,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{81F0052A-AFD6-428D-8CB5-6B9AF402475C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81F0052A-AFD6-428D-8CB5-6B9AF402475C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81F0052A-AFD6-428D-8CB5-6B9AF402475C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81F0052A-AFD6-428D-8CB5-6B9AF402475C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC562E0-4A6A-480D-8183-E0BA543624FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC562E0-4A6A-480D-8183-E0BA543624FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC562E0-4A6A-480D-8183-E0BA543624FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC562E0-4A6A-480D-8183-E0BA543624FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

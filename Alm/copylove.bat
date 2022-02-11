@@ -1,0 +1,1 @@
+xcopy .\Dependices\megasource\build\love\Release .\Release\Debug\Libs /E

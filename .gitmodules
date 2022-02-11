@@ -1,3 +1,6 @@
 [submodule "Alm/Dependices/megasource"]
 	path = Alm/Dependices/megasource
 	url = https://github.com/esengine/megasource.git
+[submodule "Alm/Dependices/love2dcs"]
+	path = Alm/Dependices/love2dcs
+	url = https://github.com/esengine/Love2dCS.git

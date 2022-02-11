@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Love;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,25 @@ namespace Alm
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : System.Windows.Window
     {
         public MainWindow()
         {
             InitializeComponent();
+
+            var task = new Task(() =>
+            {
+                var bootConfig = new BootConfig();
+                bootConfig.WindowBorderless = true;
+                bootConfig.WindowVsync = true;
+                bootConfig.WindowResizable = false;
+
+                var game = new EditorGame();
+                Boot.Init();
+                Boot.Run(game, bootConfig);
+            });
+
+            task.Start();
         }
     }
 }
