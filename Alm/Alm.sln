@@ -5,33 +5,6 @@ VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlmEditor", "AlmEditor\AlmEditor.csproj", "{4FC562E0-4A6A-480D-8183-E0BA543624FE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "love", "love", "{F9BEB2C4-9F12-4DBF-A8F0-1E312E339F08}"
-	ProjectSection(SolutionItems) = preProject
-		Dependices\megasource\build\love\Release\liblove.exp = Dependices\megasource\build\love\Release\liblove.exp
-		Dependices\megasource\build\love\Release\liblove.lib = Dependices\megasource\build\love\Release\liblove.lib
-		Dependices\megasource\build\love\Release\love.dll = Dependices\megasource\build\love\Release\love.dll
-		Dependices\megasource\build\love\Release\love.exe = Dependices\megasource\build\love\Release\love.exe
-		Dependices\megasource\build\love\Release\love.exp = Dependices\megasource\build\love\Release\love.exp
-		Dependices\megasource\build\love\Release\love.lib = Dependices\megasource\build\love\Release\love.lib
-		Dependices\megasource\build\love\Release\love_3p_box2d.lib = Dependices\megasource\build\love\Release\love_3p_box2d.lib
-		Dependices\megasource\build\love\Release\love_3p_ddsparse.lib = Dependices\megasource\build\love\Release\love_3p_ddsparse.lib
-		Dependices\megasource\build\love\Release\love_3p_enet.lib = Dependices\megasource\build\love\Release\love_3p_enet.lib
-		Dependices\megasource\build\love\Release\love_3p_glad.lib = Dependices\megasource\build\love\Release\love_3p_glad.lib
-		Dependices\megasource\build\love\Release\love_3p_glslang.lib = Dependices\megasource\build\love\Release\love_3p_glslang.lib
-		Dependices\megasource\build\love\Release\love_3p_lodepng.lib = Dependices\megasource\build\love\Release\love_3p_lodepng.lib
-		Dependices\megasource\build\love\Release\love_3p_lua53.lib = Dependices\megasource\build\love\Release\love_3p_lua53.lib
-		Dependices\megasource\build\love\Release\love_3p_luasocket.lib = Dependices\megasource\build\love\Release\love_3p_luasocket.lib
-		Dependices\megasource\build\love\Release\love_3p_lz4.lib = Dependices\megasource\build\love\Release\love_3p_lz4.lib
-		Dependices\megasource\build\love\Release\love_3p_noise1234.lib = Dependices\megasource\build\love\Release\love_3p_noise1234.lib
-		Dependices\megasource\build\love\Release\love_3p_physfs.lib = Dependices\megasource\build\love\Release\love_3p_physfs.lib
-		Dependices\megasource\build\love\Release\love_3p_wuff.lib = Dependices\megasource\build\love\Release\love_3p_wuff.lib
-		Dependices\megasource\build\love\Release\love_3p_xxhash.lib = Dependices\megasource\build\love\Release\love_3p_xxhash.lib
-		Dependices\megasource\build\love\Release\lua51.dll = Dependices\megasource\build\love\Release\lua51.dll
-		Dependices\megasource\build\love\Release\mpg123.dll = Dependices\megasource\build\love\Release\mpg123.dll
-		Dependices\megasource\build\love\Release\OpenAL32.dll = Dependices\megasource\build\love\Release\OpenAL32.dll
-		Dependices\megasource\build\love\Release\SDL2.dll = Dependices\megasource\build\love\Release\SDL2.dll
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

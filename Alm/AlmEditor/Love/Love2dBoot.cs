@@ -956,6 +956,36 @@ namespace Love
             }
         }
 
+        static Action EditorLoop(BootConfig bootConfig, Scene scene) {
+            scene.InvokeLoad();
+            Timer.Step(); // fix large delta on first frame
+
+
+            return new Action(() => {
+                SystemStep(scene);
+
+                scene.InvokeUpdate(Timer.GetDelta());
+
+                if (Graphics.IsActive())
+                {
+                    var c = Graphics.GetBackgroundColor();
+                    Graphics.Clear(c.r, c.g, c.b, c.a);
+                    Graphics.Origin();
+                    scene.InvokeDraw();
+                    Graphics.Present();
+                }
+
+                if (Timer.IsLimitMaxFPS())
+                {
+                    Timer.SleepByMaxFPS();
+                }
+                else
+                {
+                    Timer.Sleep(0.001f); // max 1000 fps.
+                }
+            };
+        }
+
         static void LoopErrorScene(Scene scene, Exception e)
         {
             try
@@ -1007,6 +1037,36 @@ namespace Love
             {
                 Init(bootConfig);
                 Loop(bootConfig, scene != null ? scene : new Love2dNoGame());
+            }
+            catch (Exception e)
+            {
+                Log.Error("----------------------------------------------------");
+                Log.Error("[Error]:");
+                Exception itException = e;
+                while (itException != null)
+                {
+                    Log.Error(itException.Message);
+                    itException = itException.InnerException;
+                }
+                Log.Error("[Stack trace]:");
+                Log.Error(e.StackTrace);
+                Log.Error("----------------------------------------------------");
+                LoopErrorScene(scene, e);
+            }
+        }
+
+        static public void EditorRun(Scene scene, BootConfig bootConfig, ref Action updateCall)
+        {
+            // config
+            if (bootConfig == null)
+            {
+                bootConfig = new BootConfig();
+            }
+
+            try
+            {
+                Init(bootConfig);
+                return EditorLoop(bootConfig, scene != null ? scene : new Love2dNoGame());
             }
             catch (Exception e)
             {

@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <WindowsFormsHost x:Name="form1"
+                              HorizontalAlignment="Stretch"
+                              VerticalAlignment="Stretch"
+                              >
+        </WindowsFormsHost>
     </Grid>
 </Window>
